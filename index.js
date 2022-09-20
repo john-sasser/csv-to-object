@@ -3,12 +3,7 @@ const csvFileInput = document.querySelector("#csvInput");
 const textArea = document.querySelector("#csvResult");
 
 // testing csv -- very small data set to test with;
-const csvString = `
-Series_reference,Period,Data_value,Suppressed,STATUS,UNITS,Magnitude,Subject,Group,Series_title_1,Series_title_2,Series_title_3,Series_title_4,Series_title_5
-BDCQ.SEA1AA,2011.06,80078,,F,Number,0,Business Data Collection - BDC,Industry by employment variable,Filled jobs,"Agriculture, Forestry and Fishing",Actual,,
-BDCQ.SEA1AA,2011.09,78324,,F,Number,0,Business Data Collection - BDC,Industry by employment variable,Filled jobs,"Agriculture, Forestry and Fishing",Actual,,
-BDCQ.SEA1AA,2011.12,85850,,F,Number,0,Business Data Collection - BDC,Industry by employment variable,Filled jobs,"Agriculture, Forestry and Fishing",Actual,,
-`;
+import csvString from "./test-data/testdata.csv";
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
